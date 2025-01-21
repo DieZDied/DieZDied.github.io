@@ -54,6 +54,7 @@ button:hover {
 
 #form {
     display: none;
+    text-align: center;
 }
 
 input {
@@ -69,3 +70,4 @@ input {
 input:focus {
     border-color: #db5d5d;
 }
+
