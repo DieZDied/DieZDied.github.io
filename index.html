@@ -40,7 +40,7 @@
             let name = document.getElementById('user_name').value;
             let email = document.getElementById('user_email').value;
             let phone = document.getElementById('user_phone').value;
-            if (email.length < 5) {
+            if (email.length < 5 || email.length === "") {
                 document.getElementById('error').innerText = 'Please enter an real email address.';
                 return;
             }
