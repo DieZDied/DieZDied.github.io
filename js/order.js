@@ -10,24 +10,23 @@ buy.addEventListener('click', () => {
 });
 
 order.addEventListener('click', () => {
-    let errorMassage = [];
+    let error = document.getElementById('error');
+    error.innerText = "";
     let name = document.getElementById('user_name').value;
     let email = document.getElementById('user_email').value;
     let phone = document.getElementById('user_phone').value;
 
 
     if (name.length < 5) {
-        errorMassage.push('Please fill in all fields');
+        error.innerText = 'Please enter a valid name.';
+        return;
     }
     if (email.length < 5) {
-        errorMassage.push('Please enter an real email address');
+        error.innerText = 'Please enter an real email address';
+        return;
     }
     if (phone.length < 5) {
-        errorMassage.push('Please enter an real phone number');
-    }
-
-    if (errorMassage.length > 0) {
-        document.getElementById('error').innerText = errorMassage.join('<br>');
+        error.innerText = 'Please enter an real phone number';
         return;
     }
 
