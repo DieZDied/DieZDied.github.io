@@ -27,7 +27,7 @@ order.addEventListener('click', () => {
     }
 
     if (errorMassage.length > 0) {
-        document.getElementById('errorMassage').innerHTML = errorMassage.join('<br>');
+        document.getElementById('error').innerText = errorMassage.join('<br>');
         return;
     }
 
