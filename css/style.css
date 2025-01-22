@@ -1,39 +1,24 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
 
-body {
+}
+body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color);
 }
-
+h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
 #main {
     width: 100%;
     padding: 20px;
     text-align: center;
 }
-
-h1 {
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
-img {
-    width: 70px;
-    margin: 30px auto;
-}
-
-p {
-    width: 350px;
-    margin: 0 auto;
-}
-
 button {
     border: 0;
     border-radius: 5px;
@@ -47,30 +32,63 @@ button {
     color: var(--tg-theme-button-color);
     background: var(--tg-theme-button-text-color);
 }
-
 button:hover {
     background: var(--tg-theme-secondary-bg-color);
 }
-
-#form {
-    display: none;
+#field{
+    margin: 50px auto;
+    border-collapse: collapse;
+    align-items: center;
+}
+#field td
+{
+    font-size: 130px;
+    width: 150px;
+    height: 150px;
     text-align: center;
+    cursor: pointer;
 }
-
-input {
-    width: 90%;
-    outline: none;
-    margin: 10px 5%;
-    padding: 15px 10px;
-    font-size: 14px;
-    border: 2px solid silver;
-    border-radius: 5px;
+#field tr{
+    height: 130px;
 }
-
-input:focus {
-    border-color: #db5d5d;
+.diagonal-line{
+    position: absolute;
+    background-color: red; /* Цвет линии */
+    height: 2px; /* Толщина линии */
+    transform-origin: top left; /* Вращение относительно верхнего левого угла */
 }
+.box {
+    position: relative; /* Для позиционирования */
+    width: 300px; /* Ширина блока */
+    height: 150px; /* Высота блока */
+    background-color: lightblue; /* Цвет фона */
+    overflow: hidden; /* Чтобы линия не выходила за границы */
+}
+#field {
+    position: relative; /* Чтобы текст остался ниже линии */
+    z-index: 1; /* Устанавливаем меньший z-index, чтобы текст был под линией */
+    margin: 50px auto; /* Убираем отступы */
+    text-align: center; /* Центрируем текст */
+    line-height: 150px; /* Выравниваем текст по высоте блока */
+    border-collapse: collapse;
+    align-items: center;
+}
+/*.diagonal::after*/
+/*{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%; !* Линия растягивается на всю ширину таблицы *!*/
+/*    height: 100%; !* Линия растягивается на всю высоту таблицы *!*/
+/*    border-top: 2px solid red; !* Толщина и цвет линии *!*/
+/*    transform: rotate(45deg); !* Поворот для диагонали *!*/
+/*    transform-origin: top left; !* Поворот от верхнего левого угла *!*/
+/*    pointer-events: none; !* Линия не мешает кликам *!*/
+/*    box-sizing: border-box;*/
+/*}*/
 
-#error {
-    color: var(--tg-theme-text-color);
+#winner {
+    font-size: 70px;
+    font-weight: 300;
 }

@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="main">
+    <h1>Tic-Tac-Toe</h1>
+    <div id="winner"></div>
+    <table id="field" align="center">
+      <tr>
+        <td id="1l" style="border-right: 4px solid var(--tg-theme-text-color); border-bottom: 4px solid var(--tg-theme-text-color)"></td>
+        <td id="2c" style="border-right: 4px solid var(--tg-theme-text-color); border-left: 4px solid var(--tg-theme-text-color); border-bottom: 4px solid var(--tg-theme-text-color)"></td>
+        <td id="3r" style="border-left: 4px solid var(--tg-theme-text-color); border-bottom: 4px solid var(--tg-theme-text-color)"></td>
+      </tr>
+      <tr>
+        <td id="4l" style="border-right: 4px solid var(--tg-theme-text-color); border-bottom: 4px solid var(--tg-theme-text-color)"></td>
+        <td id="5c" style="border-right: 4px solid var(--tg-theme-text-color); border-left: 4px solid var(--tg-theme-text-color); border-bottom: 4px solid var(--tg-theme-text-color)" ></td>
+        <td id="6r" style="border-left: 4px solid var(--tg-theme-text-color); border-bottom: 4px solid var(--tg-theme-text-color)"></td>
+      </tr>
+      <tr>
+        <td id="7l" style="border-right: 4px solid var(--tg-theme-text-color)"></td>
+        <td id="8c" style="border-right: 4px solid var(--tg-theme-text-color); border-left: 4px solid var(--tg-theme-text-color)"></td>
+        <td id="9r" style="border-left: 4px solid var(--tg-theme-text-color)"></td>
+      </tr>
+    </table>
+
+    <button id="play">Play</button>
+  </div>
+  <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
