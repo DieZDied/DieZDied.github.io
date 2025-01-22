@@ -42,7 +42,7 @@ button:hover {
 }
 #field td
 {
-    font-size: 130px;
+    font-size: 100px;
     aspect-ratio: 1;
     width: 100%;
     vertical-align: center;
@@ -74,9 +74,9 @@ button:hover {
     border-collapse: collapse;
     align-items: center;
 }
-.blocked {
-    pointer-events: none;
-}
+/*.blocked {*/
+/*    pointer-events: none;*/
+/*}*/
 /*.diagonal::after*/
 /*{*/
 /*    content: '';*/
