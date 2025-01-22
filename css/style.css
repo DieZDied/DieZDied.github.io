@@ -44,7 +44,7 @@ button:hover {
 {
     font-size: 130px;
     aspect-ratio: 1;
-    width: 150px;
+    width: 50%;
     vertical-align: center;
     text-align: center;
     cursor: pointer;
@@ -73,6 +73,9 @@ button:hover {
     line-height: 150px; /* Выравниваем текст по высоте блока */
     border-collapse: collapse;
     align-items: center;
+}
+.blocked {
+    pointer-events: none;
 }
 /*.diagonal::after*/
 /*{*/
