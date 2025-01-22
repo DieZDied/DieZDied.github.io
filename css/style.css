@@ -43,8 +43,9 @@ button:hover {
 #field td
 {
     font-size: 130px;
-    width: 150px;
-    height: 150px;
+    aspect-ratio: 1;
+    width: 33.3%;
+    vertical-align: center;
     text-align: center;
     cursor: pointer;
 }
