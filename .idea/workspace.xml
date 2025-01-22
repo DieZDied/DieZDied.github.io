@@ -83,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737468757072</updated>
       <workItem from="1737468758579" duration="7131000" />
-      <workItem from="1737541532019" duration="5855000" />
+      <workItem from="1737541532019" duration="6022000" />
     </task>
     <task id="LOCAL-00001" summary="tic tac toe">
       <option name="closed" value="true" />
@@ -165,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737547344330</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="tic tac toe">
+      <option name="closed" value="true" />
+      <created>1737547433860</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1737547433860</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
